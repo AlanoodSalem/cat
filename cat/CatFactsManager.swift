@@ -7,7 +7,7 @@
 
 import Foundation
 class CatFactsManager: ObservableObject {
-    let apiURL = URL(String: "https://catfact.ninja/fact")!
+    let apiURL = URL(string: "https://catfact.ninja/fact")!
     
     func getcatFact() {
         Task {
