@@ -17,9 +17,19 @@ struct ContentView: View {
         
             }
             
+            
             CatImagesView()
                 .tabItem{
                     Label("Random cat",systemImage: "photo")
+                }
+            CatBounceView()
+                .tabItem {
+                    Label("Bounce Cat" ,systemImage:"arrowshape.bounce.right")
+                }
+            CatGalleryView()
+                .tabItem {
+                    Image(systemName: "photo.stack")
+                    Text("Cat Gallery")
                 }
         }
     }
