@@ -13,7 +13,7 @@ class CatFactsManager: ObservableObject {
         Task {
             let (data,_) = try await URLSession.shared.data(from: apiURL)
             print ("we got the data ")
-            print(String(data:data,encoding:.utf8)?)
+            print(String(data:data,encoding:.utf8)!)
         }
     }
 }
