@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CatFactsView: View {
     
-    @StateObject var catFaactsManager =
+    @StateObject var catFactsManager =
         CatFactsManager()
     
     var body: some View {
