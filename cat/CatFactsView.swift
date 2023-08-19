@@ -12,7 +12,7 @@ struct CatFactsView: View {
     var body: some View {
         Text ("Hello, World!")
             .onAppear {
-                catFactsManager.getCatFact()
+                catFactsManage.getCatFact()
             }
     }
         
