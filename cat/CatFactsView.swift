@@ -6,22 +6,19 @@
 //
 
 import SwiftUI
-
 struct CatFactsView: View {
-    
     @StateObject var catFactsManager =
-        CatFactsManager()
-    
+    CatFactsManager ()
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text ("Hello, World!")
             .onAppear {
                 catFactsManager.getCatFact()
             }
     }
-}
-
-struct CatFactsView_Previews: PreviewProvider {
-    static var previews: some View {
-        CatFactsView()
+        
+        struct CatFactsView_Previews: PreviewProvider {
+            static var previews: some View {
+                CatFactsView()
+            }
+        }
     }
-}
