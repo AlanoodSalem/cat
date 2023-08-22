@@ -7,8 +7,7 @@
 
 import SwiftUI
 struct CatFactsView: View {
-    @StateObject var catFactsManager =
-    CatFactsManager ()
+    @StateObject var catFactsManager = CatFactsManager()
     var body: some View {
         Text ("Hello, World!")
             .onAppear {
